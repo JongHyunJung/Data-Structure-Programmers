@@ -7,13 +7,13 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.HashMap;
 
 
-// Array ÀåÁ¡ + List ÀåÁ¡ => À¯¿¬ÇÏ¸é¼­µµ ºü¸£°Ô °ªÀ» Ã£¾Æ³¾ ¼ö ÀÖ´Â 
-// Map : Key => Hash function -> Hash -> bucket index -> List(Ãæµ¹ ÇØ°á) -> Data
+//Array ìž¥ì  + List ìž¥ì  => ìœ ì—°í•˜ë©´ì„œë„ ë¹ ë¥´ê²Œ ê°’ì„ ì°¾ì•„ë‚¼ ìˆ˜ ìžˆëŠ” 
+//Map : Key => Hash function -> Hash -> bucket index -> List(ì¶©ëŒ í•´ê²°) -> Data
 
-// Map<K, V>
-// HashMap -> not synch : ºü¸£°Ô »ç¿ëÇÏµÇ thread-safe ÇÊ¿ä¾øÀ» ½Ã »ç¿ë
-// HashTable -> synch : ¸ÖÆ¼½º·¹µå + ½ÌÅ© ÇÊ¿ä½Ã »ç¿ë, º´¸ñÇö»ó ¾øÀÌ »ç¿ëÇÏ°í ½Í´Ù¸é ConcurrentHashMap »ç¿ë
-// ConcurrentHashMap -> synch + high concurrency
+//Map<K, V>
+//HashMap -> not synch : ë¹ ë¥´ê²Œ ì‚¬ìš©í•˜ë˜ thread-safe í•„ìš”ì—†ì„ ì‹œ ì‚¬ìš©
+//HashTable -> synch : ë©€í‹°ìŠ¤ë ˆë“œ + ì‹±í¬ í•„ìš”ì‹œ ì‚¬ìš©, ë³‘ëª©í˜„ìƒ ì—†ì´ ì‚¬ìš©í•˜ê³  ì‹¶ë‹¤ë©´ ConcurrentHashMap ì‚¬ìš©
+//ConcurrentHashMap -> synch + high concurrency
 
 class NewData {
 	int v;
