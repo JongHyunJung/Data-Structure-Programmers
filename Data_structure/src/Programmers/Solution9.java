@@ -44,5 +44,4 @@ public class Solution9 {
 		return num.stream().mapToInt(Integer::intValue).toArray();
 		 
 	}
-	
 }
